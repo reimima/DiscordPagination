@@ -11,4 +11,4 @@ Discord embed pagination created with [discord.js](https://github.com/discordjs/
   `false` に指定すれば必要ありません。
 
 # ライセンス
-このコードはMITライセンスの元で公開されています。
+このコードはMITライセンスの下で公開されています。
