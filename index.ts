@@ -160,10 +160,7 @@ export const pagination = async (
                 embeds: [
                     new EmbedBuilder()
                         .setColor('Red')
-                        .setTitle('An Error Occured When Sending A Message')
-                        .setDescription(
-                            'An error has occurred, please retry and report to the official.',
-                        ),
+                        .setTitle('An Error Occured When Sending A Message'),
                 ],
                 components: [],
             });
@@ -176,7 +173,7 @@ export const pagination = async (
         );
 
         await interaction.editReply({
-            components: [new ActionRowBuilder<ButtonBuilder>().addComponents(disabled)],
+            components: [new ActionRowBuilder<ButtonBuilder>().setComponents(disabled)],
         });
     });
 };
